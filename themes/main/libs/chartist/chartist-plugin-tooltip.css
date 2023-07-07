@@ -1,0 +1,39 @@
+.chartist-tooltip {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  /*min-width: 5em;*/
+  padding: .5em 1em;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+  background: #D90429;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1500;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear; }
+  .chartist-tooltip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top-color: #D90429; }
+  .chartist-tooltip.tooltip-show {
+    opacity: 1; }
+
+.chartist-tooltip.gtng-chart-tooltip {
+  white-space: nowrap;
+}
+
+.ct-area, .ct-line {
+  pointer-events: none; }
